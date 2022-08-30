@@ -1,0 +1,305 @@
+/* start glopal rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.container {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root {
+    --main-color: rgb(246, 246, 246);
+    --secound-color: rgb(3, 169, 244);
+    --text-color: rgb(51, 51, 51);
+}
+
+
+@media (max-width:767px) {
+    #header p::before {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        width: 1380px;
+    }
+}
+
+/* my framework */
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.margin {
+    margin: 50px 0;
+}
+
+span {
+    color: var(--secound-color);
+}
+
+/* my framework */
+
+/* end glopal rules */
+/* start header style */
+#header ul {
+    list-style: none;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+#header p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--text-color);
+    position: relative;
+}
+
+#header p::before {
+    content: url(../image/logo.svg);
+    width: 40px;
+    position: absolute;
+    left: -50px;
+}
+
+
+/* end header style */
+/* start services style */
+#services {
+    background-color: var(--main-color);
+}
+
+#services .serv {
+    text-align: center;
+}
+
+#services .serv h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#services .serv p {
+    line-height: 2;
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+/* end services style */
+/* start features style */
+#features .feat {
+    text-align: center;
+    max-width: 320px;
+}
+
+#features .feat img {
+    width: 100%;
+}
+
+#features .feat h2 {
+    margin: 10px 0 20px;
+}
+
+#features .feat p {
+    color: rgb(150, 150, 150);
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* end features style */
+/* start about style */
+#about {
+    background-color: var(--main-color);
+}
+
+#about .about-img {
+    width: 50%;
+    margin: 0%;
+}
+
+#about .about-img img {
+    width: 100%;
+    margin: 0%;
+}
+
+#about .text {
+    width: 50%;
+    margin: 0%;
+}
+
+#about .text h2 {
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+#about .text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+/* end about style */
+/* start data style */
+#data .data-con .data {
+    width: 450px;
+    color: white;
+    text-align: center;
+    background-color: rgb(179, 57, 57);
+    padding: 10px;
+    margin: 0%;
+}
+
+#data .data-con .data:nth-child(2) {
+    background-color: rgb(34, 112, 147);
+}
+
+#data .data-con .data:nth-child(3) {
+    background-color: rgb(33, 140, 116);
+}
+
+#data .data-con .data p:not(p:last-child) {
+    font-size: 100px;
+}
+
+/* end data style */
+/* start skills style */
+#skills {
+    background-color: var(--main-color);
+}
+
+#skills .skill h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+#skills .skill .progress {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+#skills .skill .progress div {
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    position: relative;
+}
+
+#skills .skill .progress>div::before {
+    content: 'HTML';
+    position: absolute;
+    left: -70px;
+    top: 18px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#skills .skill .progress div:nth-child(2):before {
+    content: 'CSS';
+    left: -55px;
+}
+
+#skills .skill .progress div:nth-child(3):before {
+    content: 'JAVA SCRIPT';
+    left: -129px;
+}
+
+#skills .skill .progress div:nth-child(4):before {
+    content: 'PHP';
+    left: -55px;
+}
+
+#skills .skill .progress div:nth-child(5):before {
+    content: 'python';
+    left: -80px;
+}
+
+#skills .skill .progress div [class] {
+    background-color: var(--secound-color);
+    width: 60%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#skills .skill .progress div:nth-child(2) [class] {
+    width: 70%;
+}
+
+#skills .skill .progress div:nth-child(3) [class] {
+    width: 80%;
+}
+
+#skills .skill .progress div:nth-child(4) [class] {
+    width: 65%;
+}
+
+#skills .skill .progress div:nth-child(5) [class] {
+    width: 90%;
+}
+/* end skills style */
+/* start footer style */
+footer {
+    background-color: var(--text-color);
+    padding: 20px;
+}
+footer p {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+footer p > img {
+    width: 32px;
+}
+/* end footer style */
